@@ -1,16 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import themes from './themes';
 import ToDoList from './components/organisms/ToDoList';
 
 function App() {
-  const theme = themes['dark'];
+  const [isDark, toggleDark] = useState(false);
+  const themeType = isDark ? "dark" : "light";
+  const theme = themes[themeType];
+
+  const toggleTheme = () => toggleDark(!isDark);
+
   return (
     <ThemeProvider theme={theme}>
       <div>
-        <ToDoList />
+        <ToDoList toggleTheme={toggleTheme}/>
       </div>
-    </ThemeProvider>
+    </ThemeProvider >
   );
 }
 export default App;

@@ -2,6 +2,7 @@ const theme = {
     bgColor: '#000000',
     textColor: '#ffffff',
     borderColor: '#000000',
+    itemBorderColor: '#ffffff',
     button: {
         bgColor: '#de3f53',
         textColor: '#ffffff'

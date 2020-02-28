@@ -8,8 +8,14 @@ const StyledInput = styled.input`
     margin: 0 5px;
 `;
 
-const Input = ({type, placeholder}) => (
-    <StyledInput type={type} placeholder={placeholder} />
+const InputRef = ({type, placeholder, ...otherProps}, ref) => (
+    <StyledInput type={type} ref={ref} placeholder={placeholder} {...otherProps} />
 );
+
+const Input = ({type, placeholder, ...otherProps}) => (
+    <StyledInput type={type} placeholder={placeholder} {...otherProps} />
+);
+
+export const RefInput = React.forwardRef(InputRef);
 
 export default Input;
