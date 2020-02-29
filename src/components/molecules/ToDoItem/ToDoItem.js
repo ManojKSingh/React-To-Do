@@ -5,7 +5,7 @@ import Button from '../../atoms/Button';
 
 const ToDoItem = ({children, isDone, itemId, onRemove, markDone, className, ...otherProps}) => {
     return (
-        <div className={className}>
+        <div className={`${className} ${isDone ? 'disable' : ''}`}>
             <div className={`item-text ${isDone ? 'marked': ''}`} onClick={() => markDone(itemId)}>{children}</div>
             <Button styleType='remove' onClick={() => onRemove(itemId)}>x</Button>
         </div>

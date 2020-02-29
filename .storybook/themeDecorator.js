@@ -3,7 +3,7 @@ import React from "react"
 import { ThemeProvider } from 'styled-components';
 import themes from '../src/themes';
 
-const theme = themes['dark'];
+const theme = themes['light'];
 
 const ThemeDecorator = storyFn => (
   <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
