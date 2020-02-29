@@ -1,4 +1,3 @@
-// themeDecorator.js
 import React from "react"
 import { ThemeProvider } from 'styled-components';
 import themes from '../src/themes';
