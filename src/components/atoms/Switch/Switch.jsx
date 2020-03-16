@@ -71,6 +71,8 @@ const Switch = ({className, ...otherProps}) => (
     </label>
 );
 
-export default styled(Switch)`
+const container = styled(Switch)`
     ${styles}
 `;
+
+export { container as Switch }

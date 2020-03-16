@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToDoList/> renders correctly 1`] = `
+<div
+  className="sc-AxhUy gLiyzU"
+>
+  <div
+    className="theme-switch"
+  >
+    <label
+      className="sc-AxhCb cPNfnP switch"
+    >
+      <input
+        onChange={[MockFunction]}
+        type="checkbox"
+      />
+      <span
+        className="slider round"
+      />
+    </label>
+    Dark Mode
+  </div>
+  <div
+    className="to-do-container"
+  >
+    <h2>
+      To Do List
+    </h2>
+    <form
+      onSubmit={[Function]}
+    >
+      <input
+        className="sc-AxjAm cEocgs to-do-input"
+        name="toDo"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+      <button
+        className="sc-AxirZ lfnxhL"
+        type="submit"
+      >
+        Add
+      </button>
+    </form>
+    <div />
+  </div>
+</div>
+`;

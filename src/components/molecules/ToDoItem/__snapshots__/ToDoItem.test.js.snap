@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ToDoItem/> renders correctly 1`] = `
+<div
+  className="sc-AxirZ bJALbz "
+  onClick={[Function]}
+>
+  <div
+    className="item-text "
+  />
+  <button
+    className="sc-AxjAm eiAZdM"
+    onClick={[Function]}
+  >
+    x
+  </button>
+</div>
+`;
+
+exports[`<ToDoItem/> renders correctly when mark done 1`] = `
+<div
+  className="sc-AxirZ bJALbz disable"
+  onClick={[Function]}
+>
+  <div
+    className="item-text marked"
+  />
+  <button
+    className="sc-AxjAm eiAZdM"
+    onClick={[Function]}
+  >
+    x
+  </button>
+</div>
+`;

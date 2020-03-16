@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledButton = styled.button`
     background-color: ${props => props.theme.button.bgColor};
@@ -21,10 +22,21 @@ const StyledButton = styled.button`
         `:``}
 `;
 
-const Button = ({children, ...otherProps}) => (
-    <StyledButton {...otherProps}>
+StyledButton.displayName = 'button';
+
+const Button = ({children, onClick, ...otherProps}) => (
+    <StyledButton onClick={onClick} {...otherProps}>
         {children}
     </StyledButton>
 );
 
-export default Button;
+Button.defaultProps = {
+  styleType: 'primary'
+};
+
+Button.propTypes = {
+  onClick: PropTypes.func,
+  styleType: PropTypes.oneOf(['primary', 'remove'])
+};
+
+export { Button };

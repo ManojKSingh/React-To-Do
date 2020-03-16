@@ -1,6 +1,6 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import Switch from './Switch';
+import {Switch} from './Switch';
 
 export default {
   title: 'Atom/Switch',

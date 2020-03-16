@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button/> renders correctly default button 1`] = `
+<button
+  className="sc-AxjAm kdpLzI"
+>
+  Add
+</button>
+`;
+
+exports[`<Button/> renders correctly remove button 1`] = `
+<button
+  className="sc-AxjAm eiAZdM"
+>
+  x
+</button>
+`;
